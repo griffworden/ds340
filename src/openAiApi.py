@@ -3,8 +3,6 @@ from openai import OpenAI
 key_path = './apiKey.txt'
 with open(key_path, 'r') as file:
     key = file.readline().strip()
-print("key", key)
-
 client = OpenAI(
     api_key = key
 )
